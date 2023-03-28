@@ -48,13 +48,7 @@ body{
     align-self: center;
 }
 
-.redes.idiomas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.idiomas{
+.redes{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,7 +73,6 @@ i{
 }
 
 .principal{
-    border: solid;
     max-width: 65%;
     color: white;
     margin-left: 30%;
@@ -93,5 +86,14 @@ i{
 
 .progress-bar{
     background-color: rgba(217, 3, 103, 0.85) !important;
+}
+
+.btn-visita{
+    background-color: rgb(217, 3, 104) !important;
+    color: white !important;
+}
+
+#idiomas, #educacion{
+    width: 95%;
 }
 
