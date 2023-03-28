@@ -1,0 +1,88 @@
+/* Banner */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo.jpg); 
+}
+
+.banner{
+    background-color: rgb(217, 3, 104);
+    margin-top: 1.5rem;
+    padding: 1rem;
+    padding-left: 35%;
+    position: relative;
+    color: white;
+}
+
+.nombre-banner{
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+}
+
+.presentacion{
+    color: white;
+    background-color: rgba(217, 3, 103, 0.85);
+    margin-left: 1%;
+    padding: 1rem 2rem;
+    max-width: 25%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18%;
+}
+
+.fotoPerfil{
+   margin: 2rem;
+}
+
+.rounded-circle{
+    width: 100%;
+    align-self: center;
+}
+
+.redes.idiomas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.idiomas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li.list-group-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+i{  
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.fa-github:hover, .fa-linkedin:hover{
+    color: black;
+}
+
+.principal{
+    border: solid;
+    max-width: 65%;
+    color: white;
+    margin-left: 30%;
+    margin-top: 3%;
+    padding: 1rem;
+}
