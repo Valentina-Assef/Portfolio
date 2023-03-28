@@ -86,3 +86,12 @@ i{
     margin-top: 3%;
     padding: 1rem;
 }
+
+.progress{
+    width: 80%;
+}
+
+.progress-bar{
+    background-color: rgba(217, 3, 103, 0.85) !important;
+}
+
