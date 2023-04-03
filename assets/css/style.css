@@ -13,6 +13,7 @@ body{
 
 .banner{
     background-color: rgb(217, 3, 104);
+    /* background-color: rgb(20, 131, 127); */
     margin-top: 1.5rem;
     padding: 1rem;
     padding-left: 35%;
@@ -28,6 +29,7 @@ body{
 .presentacion{
     color: white;
     background-color: rgba(217, 3, 103, 0.85);
+    /* background-color: rgb(20, 131, 127, 0.85); */
     margin-left: 1%;
     padding: 1rem 2rem;
     max-width: 25%;
@@ -85,10 +87,12 @@ i{
 }
 
 .progress-bar{
-    background-color: rgba(217, 3, 103, 0.85) !important;
+    /* background-color: rgb(20, 131, 127, 0.85) !important; */
+    background-color: rgba(217, 3, 103, 0.85) !important; 
 }
 
 .btn-visita{
+    /* background-color: rgb(20, 131, 127) !important; */
     background-color: rgb(217, 3, 104) !important;
     color: white !important;
 }
