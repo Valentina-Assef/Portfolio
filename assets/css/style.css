@@ -8,11 +8,12 @@
 body{
     width: 100%;
     height: 100vh;
-    background-image: url(../img/fondo.jpg); 
+    /* background-image: url(../img/fondo.jpg); */
 }
 
 .banner{
-    background-color: rgb(217, 3, 104);
+    background-color: rgba(6, 128, 116);
+    /*  background-color: rgb(217, 3, 104); */
     /* background-color: rgb(20, 131, 127); */
     margin-top: 1.5rem;
     padding: 1rem;
@@ -28,7 +29,8 @@ body{
 
 .presentacion{
     color: white;
-    background-color: rgba(217, 3, 103, 0.85);
+    background-color: #068074e6;
+    /* background-color: rgba(217, 3, 103, 0.85); */
     /* background-color: rgb(20, 131, 127, 0.85); */
     margin-left: 1%;
     padding: 1rem 2rem;
@@ -76,7 +78,7 @@ i{
 
 .principal{
     max-width: 65%;
-    color: white;
+    /* color: white; */
     margin-left: 30%;
     margin-top: 3%;
     padding: 1rem;
@@ -87,13 +89,15 @@ i{
 }
 
 .progress-bar{
+    background-color: rgba(6, 128, 116) !important;
     /* background-color: rgb(20, 131, 127, 0.85) !important; */
-    background-color: rgba(217, 3, 103, 0.85) !important; 
+    /* background-color: rgba(217, 3, 103, 0.85) !important;  */
 }
 
 .btn-visita{
+    background-color: rgba(6, 128, 116) !important;
     /* background-color: rgb(20, 131, 127) !important; */
-    background-color: rgb(217, 3, 104) !important;
+    /* background-color: rgb(217, 3, 104) !important; */
     color: white !important;
 }
 
