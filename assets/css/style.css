@@ -1,107 +1,60 @@
-/* Banner */
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins' sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    text-decoration: none; 
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    /* background-image: url(../img/fondo.jpg); */
+::before, ::after{
+    box-sizing: border-box;
 }
 
-.banner{
-    background-color: rgba(6, 128, 116);
-    /*  background-color: rgb(217, 3, 104); */
-    /* background-color: rgb(20, 131, 127); */
-    margin-top: 1.5rem;
-    padding: 1rem;
-    padding-left: 35%;
-    position: relative;
-    color: white;
+.section{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
 }
 
-.nombre-banner{
-  font-family: 'Dancing Script', cursive;
-  font-size: 5rem;
-}
-
-.presentacion{
-    color: white;
-    background-color: #068074e6;
-    /* background-color: rgba(217, 3, 103, 0.85); */
-    /* background-color: rgb(20, 131, 127, 0.85); */
-    margin-left: 1%;
-    padding: 1rem 2rem;
-    max-width: 25%;
-    position: absolute;
+/* Aside */
+.aside{
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 30px;
+    z-index: 10;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -18%;
 }
 
-.fotoPerfil{
-   margin: 2rem;
+ul{
+    list-style: none;
 }
-
-.rounded-circle{
-    width: 100%;
-    align-self: center;
-}
-
-.redes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-li.list-group-item {
-    display: flex;
-    align-items: center;
-    color: white;
-    background-color: transparent;
-    border: none;
-    margin-bottom: 1rem;
-}
-
-i{  
-    color: white;
-    margin-right: 0.5rem;
-}
-
-.fa-github:hover, .fa-linkedin:hover{
-    color: black;
-}
-
-.principal{
-    max-width: 65%;
-    /* color: white; */
-    margin-left: 30%;
-    margin-top: 3%;
-    padding: 1rem;
-}
-
-.progress{
-    width: 80%;
-}
-
-.progress-bar{
-    background-color: rgba(6, 128, 116) !important;
-    /* background-color: rgb(20, 131, 127, 0.85) !important; */
-    /* background-color: rgba(217, 3, 103, 0.85) !important;  */
-}
-
-.btn-visita{
-    background-color: rgba(6, 128, 116) !important;
-    /* background-color: rgb(20, 131, 127) !important; */
-    /* background-color: rgb(217, 3, 104) !important; */
-    color: white !important;
-}
-
-#idiomas, #educacion{
-    width: 95%;
-}
-
