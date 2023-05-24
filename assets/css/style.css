@@ -40,9 +40,9 @@ body{
     padding-left: 270px;
 }
 
-/* .hidden{
+.hidden{
     display: none !important;
-} */
+}
 
 .padd-15{
     padding-left: 15px;
@@ -115,6 +115,10 @@ section .container{
 
 .btn:hover{
     transform: scale(1.05);
+}
+
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 /* Aside */
@@ -367,7 +371,7 @@ a:hover{
 
 /* Skills Title */
 .skills h3{
-    font-size: 30px;
+    font-size: 24px;
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;   
@@ -376,7 +380,7 @@ a:hover{
 .skills h3::before{
     content: '';
     height: 4px;
-    width: 50px;
+    width: 55px;
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
@@ -397,52 +401,178 @@ a:hover{
 .row-skill{
     margin-top: 25px;
     display: flex;
-    
 }
 
 .row-skill .hability{
-    margin: 0 0.5rem;
-    
+    margin: 0 1rem;
 }
 
-h4{
-    text-decoration: underline;
-}
-
-.title-soft{
-    margin-left: 3rem;
+.title-hability{
+    padding: 0 1rem;
     margin-bottom: 0.5rem;
     font-size: 20px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
 }
 
-.title-hard{
-    text-align: center;
-    margin-bottom: 0.5rem;
-    font-size: 20px;
-}
-
+/* Soft Skills */
 .hability-soft{
+    padding-right: 2rem;
+}
+
+.soft-items{
     color: var(--text-black-700);
     font-size: 18px;
-    padding: 0 1rem;
 }
 
-.hability-hard {
+/* Hard Skills */
+.hard-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-    justify-items: center;
-    align-items: center;
+    justify-content: start;
     text-align: center;
-    padding: 0 1.5rem;
-  }
+    color: var(--text-black-900);
+}
 
-  .hability-hard p{
+.hard-items p{
     color: var(--text-black-700);
     font-size: 14px;
-  }
+}
 
-  .mysql{
-    margin-top: -0.5rem;
-  }
-  
+.mysql{
+    margin-top: -0.6rem;
+}
+
+/* Education & Experience */
+.education, .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 50px;
+}
+
+.education-title, .experience-title{
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.education .education-title::before{
+    content: '';
+    height: 4px;
+    width: 105px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.education .education-title::after{
+    content: '';
+    height: 4px;
+    width: 45px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+.experience .experience-title::before{
+    content: '';
+    height: 4px;
+    width: 115px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.experience .experience-title::after{
+    content: '';
+    height: 4px;
+    width: 45px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+.timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.timeline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 30px;
+}
+
+.timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+
+.timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+
+.timeline-date{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--text-black-700);
+}
+
+.timeline-date .fa{
+    margin-right: 5px;
+}
+
+.timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.timeline-subtitle{
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
