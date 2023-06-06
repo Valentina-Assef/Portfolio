@@ -31,7 +31,7 @@ body{
 .section{
     background: var(--bg-black-900);
     min-height: 100vh;
-    padding: 0 30px;
+    padding: 20px 30px;
     display: block;
     opacity: 1;
 }
@@ -575,4 +575,35 @@ a:hover{
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
+}
+
+/* Project Section */
+.projects-container{
+    padding-bottom: 40px;
+}
+
+.project-item{
+    max-width: 50%;
+    margin-bottom: 30px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+}
+
+.project-item-inner{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform, 1.5s;
+}
+
+.project-item-inner:hover{
+    transform: scale(1.1);
+}
+
+.project-img img{
+    width: 100%;
+    display: block;  
 }
