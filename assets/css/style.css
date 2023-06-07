@@ -47,7 +47,6 @@ body{
 .padd-15{
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 .container {
@@ -57,7 +56,7 @@ body{
 }
 
 section .container{
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 70px;
 }
 
@@ -254,7 +253,7 @@ h3.my-profession{
 
 .home .home-img{
     flex: 0 0 40%;
-    max-width: 40%;
+    max-width: 400px;
     position: relative;
 }
 
@@ -265,7 +264,7 @@ h3.my-profession{
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 50px;
+    right: 35px;
     bottom: -40px;
 }
 
@@ -279,7 +278,6 @@ h3.my-profession{
     left: -30px;
     top: -40px;
 } 
-
 
 .home .home-img img{
     height: 300px;
@@ -316,21 +314,16 @@ h3.my-profession{
 }
 
 /* Datos personales lado izquierdo */
-.row-about{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
 .about .about-content .personal-info{
-    max-width: 50%;
+    max-width: 100%;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
 
-.row-info{
-    flex-direction: column;
+.personal-info .col-6{
+    flex: 0 0 100%;
+    max-width: 30%;
 }
 
 a{
@@ -520,6 +513,7 @@ a:hover{
 .timeline-item{
     position: relative;
     padding-left: 37px;
+    padding-right: 15px;
     padding-bottom: 30px;
 }
 
@@ -573,7 +567,6 @@ a:hover{
 .timeline-text{
     line-height: 25px;
     font-size: 16px;
-    text-align: justify;
     color: var(--text-black-700);
 }
 
@@ -585,10 +578,6 @@ a:hover{
 .project-item{
     max-width: 50%;
     margin-bottom: 30px;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
 }
 
 .project-item-inner{
@@ -606,4 +595,129 @@ a:hover{
 .project-img img{
     width: 100%;
     display: block;  
+}
+
+/* Contact Section */
+.contact-title{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-sub-title{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.row-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-info-item .icon{
+    display: inline-block;
+}
+
+.contact-info-item .icon .fa{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+
+.contact-info-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 10px 0 0;
+}
+
+.contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+
+.contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.form-item{
+    margin-bottom: 30px;
+}
+
+.form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+textarea.form-control{
+    height: 140px;
+}
+
+.contact-form .btn{
+    height: 50px;
+    padding: 0 50px;
+}
+
+/* MediaQuery */
+@media (max-width:1199px){
+    .aside{
+        left: -270px;
+    }
+    .main-content{
+        padding-left: 0;
+    }
+    .info-item p span{
+        display: block;
+    }
+}
+@media (max-width:991px){
+    .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home-img{
+        display: none;
+    }
+}
+
+@media (max-width:767px){
+    .personal-info .col-6, .education, .experience, .project-item, .contact-info-item, .contact-form .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }

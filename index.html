@@ -28,7 +28,7 @@
         <!-- Main Content -->
         <div class="main-content">
             <!-- Home section -->
-            <section class="home section">
+            <section class="home section hidden">
                 <div class="container">
                     <div class="row row-home">
                         <div class="home-info padd-15">
@@ -43,7 +43,7 @@
                 </div>
             </section>
             <!-- About Section -->
-            <section class="about section">
+            <section class="about section hidden">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -60,22 +60,28 @@
                             </div>
                             <div class="row-about">
                                 <div class="personal-info padd-15">
-                                    <div class="row row-info">
-                                        <!-- Datos personales lado izquierdo -->
-                                        <div class="info-item padd-15">
-                                            <p>Age : <span>34</span></p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="info-item padd-15">
+                                                <p>Age : <span>34</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Birthday : <span>09 ene 1989</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>City : <span>La Plata, Argentina</span></p>
+                                            </div>
                                         </div>
-                                        <div class="info-item padd-15">
-                                            <p>Birthday : <span>09 ene 1989</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>La Plata, Argentina</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p><i class="fa-regular fa-envelope fa-xl"></i><span><a href="valenassef@gmail.com"> valenassef@gmail.com</a></span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p><i class="fa-brands fa-github fa-xl"></i><span><a href="https://github.com/Valentina-Assef" target="_blank"> Valentina-Assef</a></span></p>
+                                        <div class="col-6">
+                                            <div class="info-item padd-15">
+                                                <p><i class="fa fa-regular fa-envelope fa-xl"></i><span><a href="mailto:valenassef@gmail.com"> valenassef@gmail.com</a></span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p><i class="fa fa-brands fa-github fa-xl"></i><span><a href="https://github.com/Valentina-Assef" target="_blank"> /Valentina-Assef</a></span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p><i class="fa fa-brands fa-linkedin fa-xl"></i><span><a href="https://www.linkedin.com/in/valentina-assef/" target="_blank"> /valentina-assef</a></span></p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -167,7 +173,7 @@
 
             <!----------------- CORREGIR!! ------------->
             <!-- Skills Section -->
-            <section class="skills section">
+            <section class="skills section hidden">
                 <div class="container">
                     <div class="skills">
                         <h3>Skills</h3>
@@ -237,7 +243,7 @@
             </section>
 
             <!-- Projects Section -->
-            <section class="projects section">
+            <section class="projects section hidden">
                 <div class="projects-container">
                     <div class="section-title padd-15">
                         <h2>Projects</h2>
@@ -334,8 +340,70 @@
                 </div>
             </section>
             <!-- Contact Section -->
-            <section class="contact">
-
+            <section class="contact section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title">Have You Any Questions ?</h3>
+                    <h4 class="contact-sub-title padd-15">My Social Networks</h4>
+                    <div class="row row-item">
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope fa-2xl"></i></div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:valenassef@gmail.com">valenassef@gmail.com</a></p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-brands fa-github fa-2xl"></i></div>
+                            <h4>Github</h4>
+                            <p><a href="https://github.com/Valentina-Assef" target="_blank"> /Valentina-Assef</a></p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-brands fa-linkedin fa-2xl"></i></div>
+                            <h4>Linkedin</h4>
+                            <p><a href="https://www.linkedin.com/in/valentina-assef/" target="_blank"> /valentina-assef</a></p>
+                        </div>
+                    </div>
+                    <h4 class="contact-sub-title padd-15">Send Me A Message</h4>
+                    <!-- Contact Form -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </div>
