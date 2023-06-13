@@ -56,7 +56,7 @@ body{
 }
 
 section .container{
-    padding-top: 70px;
+    padding-top: 50px; /* Ojo era 70px */
     padding-bottom: 70px;
 }
 
@@ -356,87 +356,6 @@ a:hover{
     margin-top: 10px;
 }
 
-/* Skills */
- .about .about-content .skills{
-    margin-top: 50px;
-    margin-left: 5rem;
-}
-
-/* Skills Title */
-.skills h3{
-    font-size: 24px;
-    color: var(--text-black-900);
-    font-weight: 700;
-    position: relative;   
-}
-
-.skills h3::before{
-    content: '';
-    height: 4px;
-    width: 55px;
-    background-color: var(--skin-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-.skills h3::after{
-    content: '';
-    height: 4px;
-    width: 25px;
-    background-color: var(--skin-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
-}
-
-.row-skill{
-    margin-top: 25px;
-    display: flex;
-}
-
-.row-skill .hability{
-    margin: 0 1rem;
-}
-
-.title-hability{
-    padding: 0 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--text-black-900);
-    border-bottom: 1px solid var(--bg-black-50);
-}
-
-/* Soft Skills */
-.hability-soft{
-    padding-right: 2rem;
-}
-
-.soft-items{
-    color: var(--text-black-700);
-    font-size: 18px;
-}
-
-/* Hard Skills */
-.hard-items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
-    justify-content: start;
-    text-align: center;
-    color: var(--text-black-900);
-}
-
-.hard-items p{
-    color: var(--text-black-700);
-    font-size: 14px;
-}
-
-.mysql{
-    margin-top: -0.6rem;
-}
 
 /* Education & Experience */
 .education, .experience{
@@ -445,7 +364,7 @@ a:hover{
     margin-top: 50px;
 }
 
-.education-title, .experience-title{
+.education-title, .experience-title, .skill-title{
     margin-bottom: 30px;
     font-size: 24px;
     color: var(--text-black-900);
@@ -570,6 +489,103 @@ a:hover{
     color: var(--text-black-700);
 }
 
+/* Skills */
+.row-hard-skill{
+    margin-top: 4rem;
+}
+
+.col-1{
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.col-11{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50rem;
+}
+
+.skill-item{
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.skill-item-inner{
+    padding-top: 15px;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.35 ease;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.skill-item-hard{
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+.skill-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-icon .fa{
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.icon-tabler{
+    stroke: var(--skin-color);
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.skill-item-inner:hover .skill-icon{
+    background: var(--skin-color);
+}
+
+.skill-item-inner:hover .skill-icon .fa{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.skill-item-inner:hover .icon-tabler{
+    stroke: #ffffff;
+    width: 25px;
+    height: 25px;
+}
+
+.skill-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
 /* Project Section */
 .projects-container{
     padding-bottom: 40px;
@@ -598,17 +614,10 @@ a:hover{
 }
 
 /* Contact Section */
-.contact-title{
-    color: var(--skin-color);
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
 .contact-sub-title{
     color: var(--text-black-900);
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 40px;
 }
 
@@ -651,7 +660,8 @@ a:hover{
 
 .contact-form{
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 70%;
+    margin: auto;
 }
 
 .contact-form .col-6{
@@ -690,7 +700,8 @@ textarea.form-control{
 
 .contact-form .btn{
     height: 50px;
-    padding: 0 50px;
+   
+    text-align: center;
 }
 
 /* MediaQuery */
@@ -718,6 +729,20 @@ textarea.form-control{
 @media (max-width:767px){
     .personal-info .col-6, .education, .experience, .project-item, .contact-info-item, .contact-form .col-6{
         flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .form-item .btn{
+        max-width: 100%;
+    }
+    .contact-form{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width:424px){
+    .form-item .btn{
         max-width: 100%;
     }
 }
