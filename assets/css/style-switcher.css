@@ -2,8 +2,8 @@
     position: fixed;
     right: 0;
     top: 60px;
-    padding: 15px;
-    width: 140px;
+    padding: 10px;
+    width: 120px;
     border: 1px solid var(--bg-black-50);
     background: var(--bg-black-100);
     z-index: 101;
@@ -14,7 +14,6 @@
 
 .style-switcher.open{
     transform: translateX(-25px);
-    
 }
 
 .style-switcher .s-icon{
