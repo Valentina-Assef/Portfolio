@@ -16,3 +16,11 @@ function projectItemDetails(projectItem){
     document.querySelector(".pp-thumbnail img").src = projectItem.querySelector(".project-img").src;
     document.querySelector(".project-popup-body").innerHTML = projectItem.querySelector(".project-item-details").innerHTML;
 }
+
+/* Typing Animation */
+let typed = new Typed(".typing",{
+    strings:["Web Developer", "Front End Developer"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true
+})
