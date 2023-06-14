@@ -587,31 +587,125 @@ a:hover{
 
 
 /* Project Section */
-.projects-container{
-    padding-bottom: 40px;
+.project-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.project-item{
-    max-width: 50%;
-    margin-bottom: 30px;
-}
-
-.project-item-inner{
-    border: 6px solid var(--bg-black-100);
+.project-card{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
     border-radius: 10px;
-    overflow: hidden;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.project-img{
+    max-width: 400px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.project-title{
+    color: var(--text-black-900);
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+
+.project-button{
+    color: var(--skin-color);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
     cursor: pointer;
-    transition: transform, 1.5s;
+    margin-top: 0.25rem;
 }
 
-.project-item-inner:hover{
-    transform: scale(1.1);
+.project-button-icon{
+    font-size: 1rem;
+    transition: .3s;
 }
 
-.project-img img{
-    width: 100%;
-    display: block;  
+.project-item-details{
+    display: none;
 }
+
+/* Project Popup */
+.project-popup{
+    position: fixed;
+    top: 0;
+    left: 20%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.project-popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-popup-inner{
+    background-color: var(--bg-black-100);
+    border: 5px solid var(--bg-black-50);
+    border-radius: 10px;
+    max-width: 100%;
+    padding: 0.5rem 0.75rem 1.25rem 0.75rem;
+}
+
+.row-close{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+.row-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-popup-close{
+    font-size: 1.5rem;
+    color: #302e4d;
+}
+
+.project-popup-img{
+    width: 500px;
+    border-radius: 6px;
+    object-fit: contain;
+    background-color: var(--bg-black-100);
+    border: 3px solid var(--bg-black-50);
+}
+
+.details-title{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 25px;
+}
+
+.details-info{
+    color: var(--text-black-900);
+    font-size: 16px;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.details-info li{
+    margin-bottom: 0.5rem;
+}
+
 
 /* Contact Section */
 .contact-sub-title{
@@ -700,7 +794,6 @@ textarea.form-control{
 
 .contact-form .btn{
     height: 50px;
-   
     text-align: center;
 }
 
