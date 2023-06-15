@@ -77,3 +77,14 @@
     background: #1854b4;
 }
 
+@media (max-width:991px){
+    .style-switcher{
+        top: 20px;
+    }
+}
+
+@media (max-width:424px){
+    .style-switcher{
+        right: -1rem;
+    }
+}

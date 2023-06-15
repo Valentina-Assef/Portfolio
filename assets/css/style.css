@@ -600,6 +600,7 @@ a:hover{
 }
 
 .project-card{
+    width: 400px;
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
@@ -608,7 +609,7 @@ a:hover{
 }
 
 .project-img{
-    max-width: 400px;
+    max-width: 100%;
     border-radius: 6px;
     object-fit: contain;
 }
@@ -643,17 +644,18 @@ a:hover{
 .project-popup{
     position: fixed;
     top: 0;
-    left: 20%;
+    left: 270px;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
     z-index: 100;
+    transition: .3s;
     opacity: 0;
     visibility: hidden;
-    transition: .3s;
 }
 
 .project-popup.open{
@@ -663,34 +665,32 @@ a:hover{
 
 .project-popup-inner{
     background-color: var(--bg-black-100);
+    width: 800px;
     border: 5px solid var(--bg-black-50);
     border-radius: 10px;
-    max-width: 100%;
-    padding: 0.5rem 0.75rem 1.25rem 0.75rem;
+    padding: 1.5rem;
+    position: relative;
 }
 
-.row-close{
-    display: flex;
-    justify-content: end;
+.project-popup-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin-top: -0.5rem;
-}
-
-.row-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    column-gap: 3rem;
 }
 
 .project-popup-close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
     font-size: 1.5rem;
-    color: #302e4d;
+    color: var(--bg-black-50);
+    cursor: pointer;
 }
 
 .project-popup-img{
-    width: 500px;
+    width: 400px;
     border-radius: 6px;
-    object-fit: contain;
     background-color: var(--bg-black-100);
     border: 3px solid var(--bg-black-50);
 }
@@ -699,17 +699,19 @@ a:hover{
     color: var(--text-black-900);
     text-align: center;
     font-size: 25px;
-}
-
-.details-info{
-    color: var(--text-black-900);
-    font-size: 16px;
-    padding: 1rem;
-    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
 }
 
 .details-info li{
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-black-900);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.details-info li:last-child{
+    margin-bottom: 0;
 }
 
 
@@ -814,7 +816,11 @@ textarea.form-control{
     .info-item p span{
         display: block;
     }
+    .project-popup{
+        left: 0;
+    }
 }
+
 @media (max-width:991px){
     .home-info{
         flex: 0 0 100%;
@@ -823,10 +829,14 @@ textarea.form-control{
     .home-img{
         display: none;
     }
+    .project-popup-close{
+        top: 0.3rem;
+        right: 1rem;
+    }
 }
 
 @media (max-width:767px){
-    .personal-info .col-6, .education, .experience, .project-item, .contact-info-item, .contact-form .col-6{
+    .personal-info .col-6, .education, .experience, .project-item, .project-card, .contact-info-item, .contact-form .col-6{
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -837,6 +847,41 @@ textarea.form-control{
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0;
+    }
+    .project-popup-inner{
+        width: 350px;
+        padding: 2.8rem 1.5rem 2.5rem;
+    }
+    .project-popup-content{
+        grid-template-columns: 1fr;
+        row-gap: 1.6rem;
+    }
+    .project-popup-img{
+        width: 280px;
+    }
+    .project-popup-close{
+        top: 0.5rem;
+        right: 1rem;
+    }
+}
+
+@media (max-width:500px){
+    .project-popup-inner{
+        width: 250px;
+        padding: 2.8rem 1.5rem 2.5rem;
+    }
+    .project-popup-img{
+        width: 190px;
+    }
+    .project-popup-close{
+        top: 0.25rem;
+        right: 0.75rem;
+    }
+    .details-title{
+        font-size: 20px;
+    }
+    .details-info li{
+        font-size: 12px;
     }
 }
 
