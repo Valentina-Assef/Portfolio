@@ -71,6 +71,7 @@ function updateNav(element){
     }
 }
 
+/* Know-me & Contact Bottons */
 function removeBackSection(){
     for(let i=0; i<totalSection; i++){
         allSection[i].classList.remove("back-section");
@@ -110,35 +111,3 @@ function asideSectionTogglerBtn(){
         allSection[i].classList.toggle("open")
     }
 }
-
-
-
-
-
-
-       /*  
-        
-     */
-            /* removeBackSection();
-            
-                {
-                    
-                    //
-            */
-            /* 
-            
-        
-    }
-    
-    
-    
-    
-    document.querySelector(".hire-me").addEventListener("click", function(){
-        let sectionIndex = this.getAttribute("data-section-index");
-        showSection(this);
-        updateNav(this);
-        removeBackSection();
-        addBackSection(sectionIndex);
-    })
-    
-         */
