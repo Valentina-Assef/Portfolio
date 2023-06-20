@@ -37,11 +37,15 @@
 }
 
 .style-switcher .style-switcher-toggler{
-    top: 0;
+    top: -25px;
 }
 
 .style-switcher .day-night{
-    top: 50px;
+    top: 25px;
+}
+
+.style-switcher .language-switcher{
+    top: 75px;
 }
 
 .style-switcher h4{
@@ -80,7 +84,7 @@
 
 @media (max-width:991px){
     .style-switcher{
-        top: 20px;
+        top: 50px;
     }
 }
 

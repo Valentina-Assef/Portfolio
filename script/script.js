@@ -1,3 +1,20 @@
+/* Language Switcher */
+let languageSwitcher = document.querySelector(".language-switcher");
+let languageIcon = document.querySelector("#languageIcon");
+
+function idioma() {
+  let currentPath = window.location.pathname; // Obtiene la ruta actual del archivo
+
+  if (currentPath.includes("/assets/es/indexEs.html")) { 
+    location.href = "/index.html";
+    languageIcon.textContent = "🇺🇸"; // Cambiar el icono a la bandera de Estados Unidos u otro icono deseado para el idioma inglés
+  } else {
+    location.href = "/assets/es/indexEs.html";
+    languageIcon.textContent = "🇪🇸"; // Cambiar el icono a la bandera de España o el icono original para el idioma español
+  }
+}
+
+
 /* Typing Animation */
 let typed = new Typed(".typing",{
     strings:["Web Developer", "Front End Developer"],
