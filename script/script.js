@@ -58,7 +58,11 @@ function showSection(element){
         allSection[i].classList.remove("active");
     }
     let target = element.getAttribute("href").split("#")[1];
-    document.querySelector("#" + target).classList.add("active")
+    document.querySelector("#" + target).classList.add("active");
+
+    if(document.querySelector(".style-switcher").classList.contains("open")){
+        document.querySelector(".style-switcher").classList.remove("open");
+    }
 }
 
 function updateNav(element){

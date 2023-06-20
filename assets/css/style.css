@@ -299,24 +299,36 @@ h3.my-profession{
     margin-top: 50px;
 }
 
-.home .home-img{
+/* 
+.home .home-img img{
+    height: 300px;
+    border-radius: 5px;
+    object-fit: contain;
+} */
+
+.home-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home .home-img {
     flex: 0 0 40%;
     max-width: 400px;
     position: relative;
 }
 
-.home-img::after{
+.home-img::after {
     content: '';
     position: absolute;
     height: 80px;
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 35px;
+    right: -30px;
     bottom: -40px;
 }
 
-.home-img::before{
+.home-img::before {
     content: '';
     position: absolute;
     height: 80px;
@@ -325,9 +337,9 @@ h3.my-profession{
     border-left: 10px solid var(--skin-color);
     left: -30px;
     top: -40px;
-} 
+}
 
-.home .home-img img{
+.home .home-img img {
     height: 300px;
     border-radius: 5px;
     object-fit: contain;
@@ -877,6 +889,9 @@ textarea.form-control{
     .project-popup{
         left: 0;
     }
+    .home-img-container{
+        margin-top: 100px;
+    }
 }
 
 @media (max-width:991px){
@@ -884,12 +899,12 @@ textarea.form-control{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home-img{
-        display: none;
-    }
     .project-popup-close{
         top: 0.3rem;
         right: 1rem;
+    }
+    .home-img{
+        display: none;
     }
 }
 
