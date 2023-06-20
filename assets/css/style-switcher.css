@@ -70,11 +70,12 @@
 }
 
 .style-switcher .color2{
-    background: #0d8f79;
+    
+    background: #174aa1;
 }
 
 .style-switcher .color3{
-    background: #1854b4;
+    background: #15a86b;
 }
 
 @media (max-width:991px){
