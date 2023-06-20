@@ -3,8 +3,8 @@ let languageSwitcher = document.querySelector(".language-switcher");
 let languageIcon = document.querySelector("#languageIcon");
 
 function idioma() {
-  let currentPath = window.location.pathname;
-  if (currentPath.includes("/assets/es/indexEs.html")) { 
+  let currentURL = window.location.href;
+  if (currentURL.includes("indexEs.html")) { 
     location.href = "/index.html";
     languageIcon.textContent = "🇺🇸";
   } else {
@@ -12,6 +12,19 @@ function idioma() {
     languageIcon.textContent = "🇪🇸";
   }
 }
+/* let languageSwitcher = document.querySelector(".language-switcher");
+let languageIcon = document.querySelector("#languageIcon");
+
+function idioma() {
+  let currentPath = window.location.pathname;
+  if (currentPath.includes("indexEs.html")) { 
+    location.href = "/index.html";
+    languageIcon.textContent = "🇺🇸";
+  } else {
+    location.href = "/assets/es/indexEs.html";
+    languageIcon.textContent = "🇪🇸";
+  }
+} */
 
 
 /* Typing Animation */
