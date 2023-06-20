@@ -39,7 +39,7 @@ body{
 .section{
     background: var(--bg-black-900);
     min-height: 100vh;
-    padding: 20px 30px; /* Dice 0 30px */
+    padding: 20px 30px;
     display: block;
     opacity: 1;
     position: fixed;

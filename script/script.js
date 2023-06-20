@@ -3,42 +3,38 @@ let languageSwitcher = document.querySelector(".language-switcher");
 let languageIcon = document.querySelector("#languageIcon");
 
 function idioma() {
-  let currentPath = window.location.pathname; // Obtiene la ruta actual del archivo
-
+  let currentPath = window.location.pathname;
   if (currentPath.includes("/assets/es/indexEs.html")) { 
     location.href = "/index.html";
-    languageIcon.textContent = "🇺🇸"; // Cambiar el icono a la bandera de Estados Unidos u otro icono deseado para el idioma inglés
+    languageIcon.textContent = "🇺🇸";
   } else {
     location.href = "/assets/es/indexEs.html";
-    languageIcon.textContent = "🇪🇸"; // Cambiar el icono a la bandera de España o el icono original para el idioma español
+    languageIcon.textContent = "🇪🇸";
   }
 }
 
 
 /* Typing Animation */
-let typed = new Typed(".typing",{
-    strings:["Web Developer", "Front End Developer"],
-    typeSpeed:100,
-    backSpeed:60,
-    loop:true
-})
-/* let typed = new Typed(".typing",{
-    strings:["Web Developer", "Front End Developer"],
-    typeSpeed:100,
-    backSpeed:60,
-    loop:true
+let strings;
+let currentPath = window.location.pathname;
+let stringsEN = ["Web Developer", "Front End Developer"];
+let stringsES = ["Desarrolladora Web", "Desarrolladora Front End"];
+
+if (currentPath.includes("index.html")) {
+  typed = new Typed(".typing", {
+    strings: stringsEN,
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
+} else {
+  typed = new Typed(".typing", {
+    strings: stringsES,
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
 }
-if (currentPath.includes("/assets/es/indexEs.html")) { 
-    strings:["Web Developer", "Front End Developer"],
-    typeSpeed:100,
-    backSpeed:60,
-    loop:true,
-  } else {
-    strings:["Desarrolladora Web", "Desarrolladora Front End"],
-    typeSpeed:100,
-    backSpeed:60,
-    loop:true,
-  }) */
 
 
 /* Aside */
