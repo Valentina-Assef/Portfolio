@@ -299,13 +299,6 @@ h3.my-profession{
     margin-top: 50px;
 }
 
-/* 
-.home .home-img img{
-    height: 300px;
-    border-radius: 5px;
-    object-fit: contain;
-} */
-
 .home-img-container {
     display: flex;
     justify-content: center;
@@ -683,6 +676,12 @@ a:hover{
     column-gap: .25rem;
     cursor: pointer;
     margin-top: 0.25rem;
+    transition: all 0.5s ease;
+}
+
+.project-button:hover{
+    transform-origin: left center;
+    transform: scale(1.10);
 }
 
 .project-button-icon{
