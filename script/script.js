@@ -22,6 +22,23 @@ let typed = new Typed(".typing",{
     backSpeed:60,
     loop:true
 })
+/* let typed = new Typed(".typing",{
+    strings:["Web Developer", "Front End Developer"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true
+}
+if (currentPath.includes("/assets/es/indexEs.html")) { 
+    strings:["Web Developer", "Front End Developer"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true,
+  } else {
+    strings:["Desarrolladora Web", "Desarrolladora Front End"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true,
+  }) */
 
 
 /* Aside */

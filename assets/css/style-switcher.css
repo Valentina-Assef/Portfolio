@@ -32,6 +32,11 @@
     border-radius: 50%;
 }
 
+.language-switcher img{
+    width: 30px;
+    margin-top: 3px;
+}
+
 .style-switcher .s-icon i{
     line-height: 40px;
 }
