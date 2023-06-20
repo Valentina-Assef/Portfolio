@@ -1,17 +1,4 @@
 /* Language Switcher */
-let languageSwitcher = document.querySelector(".language-switcher");
-let languageIcon = document.querySelector("#languageIcon");
-
-function idioma() {
-  let currentURL = window.location.href;
-  if (currentURL.includes("indexEs.html")) { 
-    location.href = "/index.html";
-    languageIcon.textContent = "🇺🇸";
-  } else {
-    location.href = "Portfolio/assets/es/indexEs.html";
-    languageIcon.textContent = "🇪🇸";
-  }
-}
 /* let languageSwitcher = document.querySelector(".language-switcher");
 let languageIcon = document.querySelector("#languageIcon");
 
@@ -29,6 +16,14 @@ function idioma() {
 
 /* Typing Animation */
 let strings;
+typed = new Typed(".typing", {
+    strings: ["Web Developer", "Front End Developer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+/* let strings;
 let currentPath = window.location.pathname;
 let stringsEN = ["Web Developer", "Front End Developer"];
 let stringsES = ["Desarrolladora Web", "Desarrolladora Front End"];
@@ -47,7 +42,7 @@ if (currentPath.includes("index.html")) {
     backSpeed: 60,
     loop: true
   });
-}
+} */
 
 
 /* Aside */
