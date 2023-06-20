@@ -8,7 +8,7 @@ function idioma() {
     location.href = "/index.html";
     languageIcon.textContent = "🇺🇸";
   } else {
-    location.href = "/assets/es/indexEs.html";
+    location.href = "Portfolio/assets/es/indexEs.html";
     languageIcon.textContent = "🇪🇸";
   }
 }
