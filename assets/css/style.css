@@ -264,6 +264,10 @@ ul{
     color: var(--text-black-900);
 }
 
+.section.home{
+    animation: none;
+}
+
 .row-home{
     justify-content: center;
     align-items: center;
