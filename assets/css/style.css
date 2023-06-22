@@ -1005,11 +1005,12 @@ textarea.form-control{
     .timeline-box{
         padding: 0;
     }
-    .aside{
+    .aside.open{
+        left: 0;
         width: 200px;
     }
     .section.open{
-        left: 200px;
+        left: 190px;
     }
     .aside .nav-toggler.open{
         left: 210px;
