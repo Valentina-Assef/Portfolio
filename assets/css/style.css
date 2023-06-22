@@ -906,13 +906,17 @@ textarea.form-control{
         top: 0.3rem;
         right: 1rem;
     }
-    .home-img{
-        display: none;
+}
+
+@media (max-width:800px){
+    .education, .experience{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
 @media (max-width:767px){
-    .personal-info .col-6, .education, .experience, .project-item, .project-card, .contact-info-item, .contact-form .col-6{
+    .personal-info .col-6, .project-item, .project-card, .contact-info-item, .contact-form .col-6{
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -939,9 +943,27 @@ textarea.form-control{
         top: 0.5rem;
         right: 1rem;
     }
+    .home-img-container{
+        margin-top: 100px;
+        width: 300px;
+    }
+
+    .home-img::after {
+        right: -20px;
+        bottom: 0;
+    }
+    
+    .home-img::before {
+        left: -20px;
+        top: -10px;
+    }
+
+    .home-img img{
+        width: 250px;
+    }
 }
 
-@media (max-width:500px){
+@media (max-width:524px){
     .project-popup-inner{
         width: 250px;
         padding: 2.8rem 1.5rem 2.5rem;
@@ -959,10 +981,56 @@ textarea.form-control{
     .details-info li{
         font-size: 12px;
     }
+    .home-img-container{
+        margin-top: 70px;
+        width: 200px;
+    }
+    .home-img::after {
+        right: -15px;
+        bottom: 25px;
+    }
+    .home-img::before {
+        left: -15px;
+        top: 10px;
+    }
+    .home-img img{
+        width: 200px;
+    }
 }
 
 @media (max-width:424px){
     .form-item .btn{
         max-width: 100%;
+    }
+    .timeline-box{
+        padding: 0;
+    }
+    .aside{
+        width: 200px;
+    }
+    .section.open{
+        left: 200px;
+    }
+    .aside .nav-toggler.open{
+        left: 210px;
+    }
+    .home-img-container{
+        margin-top: 40px;
+        width: 150px;
+    }
+    .home-img::after {
+        height: 60px;
+        width: 60px;
+        right: -15px;
+        bottom: 50px;
+    }
+    .home-img::before {
+        height: 60px;
+        width: 60px;
+        left: -15px;
+        top: 40px;
+    }
+    .home-img img{
+        width: 150px;
     }
 }

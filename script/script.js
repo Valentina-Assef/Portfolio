@@ -1,19 +1,3 @@
-/* Language Switcher */
-/* let languageSwitcher = document.querySelector(".language-switcher");
-let languageIcon = document.querySelector("#languageIcon");
-
-function idioma() {
-  let currentPath = window.location.pathname;
-  if (currentPath.includes("indexEs.html")) { 
-    location.href = "/index.html";
-    languageIcon.textContent = "🇺🇸";
-  } else {
-    location.href = "/assets/es/indexEs.html";
-    languageIcon.textContent = "🇪🇸";
-  }
-} */
-
-
 /* Typing Animation */
 let strings;
 typed = new Typed(".typing", {
@@ -22,27 +6,6 @@ typed = new Typed(".typing", {
     backSpeed: 60,
     loop: true
 });
-
-/* let strings;
-let currentPath = window.location.pathname;
-let stringsEN = ["Web Developer", "Front End Developer"];
-let stringsES = ["Desarrolladora Web", "Desarrolladora Front End"];
-
-if (currentPath.includes("index.html")) {
-  typed = new Typed(".typing", {
-    strings: stringsEN,
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-  });
-} else {
-  typed = new Typed(".typing", {
-    strings: stringsES,
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-  });
-} */
 
 
 /* Aside */

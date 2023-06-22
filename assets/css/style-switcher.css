@@ -1,7 +1,7 @@
 .style-switcher{
     position: fixed;
     right: 0;
-    top: 60px;
+    top: 40px;
     padding: 10px;
     width: 120px;
     border: 1px solid var(--bg-black-50);
@@ -32,39 +32,30 @@
     border-radius: 50%;
 }
 
-.language-switcher img{
-    width: 30px;
-    margin-top: 3px;
-}
-
 .style-switcher .s-icon i{
     line-height: 40px;
 }
 
 .style-switcher .style-switcher-toggler{
-    top: -25px;
+    top: -5px;
 }
 
 .style-switcher .day-night{
-    top: 25px;
-}
-
-.style-switcher .language-switcher{
-    top: 75px;
-}
-
-.style-switcher h4{
-    margin: 0 0 10px;
-    color: var(--text-black-700);
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: capitalize;
+    top: 45px;
 }
 
 .style-switcher .colors{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.style-switcher h4{
+    margin-bottom: 10px;
+    color: var(--text-black-700);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 .style-switcher .colors span{
