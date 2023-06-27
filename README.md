@@ -1,7 +1,7 @@
 # Portfolio Valentina Assef
 
-### Desarrollado con HTML, CSS y JavaScript
-
-### Visita el sitio en https://valentina-assef.github.io/Portfolio
-
 ![](./assets/img/screenshot.png)
+
+Project developed with HTML, CSS and JavaScript.
+
+### Visit the site at https://valentina-assef.github.io/Portfolio/
