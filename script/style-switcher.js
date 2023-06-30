@@ -5,9 +5,9 @@ styleSwitcherToggle.addEventListener("click", () => {
 })
 
 /* Hide style - switcher on scroll */
-window.addEventListener("wheel", () => {
+function handleScroll() {
     const colorsContainer = document.querySelector(".colors");
-    const themeTitle = document.querySelector("h4");
+    const themeTitle = document.getElementById("theme-colors");
     if (document.querySelector(".style-switcher").classList.contains("open")) {
         document.querySelector(".style-switcher").classList.remove("open");
     }
@@ -18,7 +18,10 @@ window.addEventListener("wheel", () => {
         colorsContainer.classList.remove("hidden");
         themeTitle.classList.remove("hidden");
     }, 200);
-});
+}
+
+window.addEventListener("wheel", handleScroll);
+window.addEventListener("touchmove", handleScroll);
 
 /* Theme Color */
 let alternateStyles= document.querySelectorAll(".alternate-style");
