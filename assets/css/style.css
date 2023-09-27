@@ -642,6 +642,9 @@ a:hover{
     text-transform: capitalize;
 }
 
+.mongo-icon {
+    padding-top: 0.5rem;
+}
 
 /* Project Section */
 .project-card-container{
